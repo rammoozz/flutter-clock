@@ -14,7 +14,8 @@ import 'digital_clock.dart';
 
 void main() async {
   // Force landscape
-   await SystemChrome.setPreferredOrientations(
+  WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations(
       [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
 
   // A temporary measure until Platform supports web and TargetPlatform supports

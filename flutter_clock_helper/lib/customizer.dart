@@ -110,7 +110,6 @@ class _ClockCustomizerState extends State<ClockCustomizer> {
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-           
                 _enumMenu('Theme', _themeMode,
                     ThemeMode.values.toList()..remove(ThemeMode.system),
                     (ThemeMode mode) {
